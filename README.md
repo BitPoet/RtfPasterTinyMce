@@ -21,7 +21,7 @@ This is a proof-of-concept module.
 - Open ProcessWre admin and select Modules -> Refresh
 - Click "Install" for "Rtf Paster TinyMCE"
 - Go to "Fields" and select your TinyMCE field where you want to paste office content including images
-- Check "rtfpaster" in "Additional plugins" and save your field configuration
+- Check "rtfpaster" in "Additional plugins" on the "Input" tab and save your field configuration
 - Edit a page with that field and copy a passage that contains both text and images from your word processor
   into your TinyMCE field. You should see your images there.
 
