@@ -39,7 +39,7 @@ uploaded images will be named fieldname.png, fieldname-1.png, fieldname-2.png et
 
 ## Credits
 
-Credits go to [tblueml](https://github.com/tbluemel) for creating the [rtf.js](https://github.com/tbluemel/rtf.js) RTF convert.
+Credits go to [tbluemel](https://github.com/tbluemel) for creating the [rtf.js](https://github.com/tbluemel/rtf.js) RTF convert.
 
 ## LICENSE
 
