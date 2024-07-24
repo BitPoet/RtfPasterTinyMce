@@ -25,6 +25,18 @@ This is a proof-of-concept module.
 - Edit a page with that field and copy a passage that contains both text and images from your word processor
   into your TinyMCE field. You should see your images there.
 
+### Advanced
+
+- Go into InputfieldTinyMCE's module settings and enable "Image fields for ImgUpload"
+- Edit your TinyMCE field and select an existing image field in the "Image fiels for ImgUpload" select
+  on the Input tab
+- Paste some text / images mixture from your word processor
+
+Tadaa! Your images are magically uploaded into the selected field.
+
+Since the RTF doesn't contain any information about the file name of the source image, your
+uploaded images will be named fieldname.png, fieldname-1.png, fieldname-2.png etc.
+
 ## Credits
 
 Credits go to [tblueml](https://github.com/tbluemel) for creating the [rtf.js](https://github.com/tbluemel/rtf.js) RTF convert.
