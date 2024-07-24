@@ -2,8 +2,10 @@
  * RTF-Paster plugin for TinyMCE
  *
  * On Paste events, check if there's an RTF content in the clipboard.
- * If yes, convert it to HTML and insert it. Any images are uploaded
- * to the configured image field for the current page.
+ * If yes, convert it to HTML and insert it.
+ *
+ * ToDo:
+ * Upload images as files to a dedicated image field in the current page
  *
  * @param editor
  *
