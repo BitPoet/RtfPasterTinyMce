@@ -7,6 +7,13 @@ It allows you to copy content from office applications on Windows including imag
 Unlike regular copy and paste e.g. from MS Word, where images are contained as file:// links
 and unusable, images are pasted as data: URLs.
 
+Since every application constructs the clipboard contents differently, the RTF parser may
+or may not be able to extract everything.
+
+### Tested
+Microsoft Word:  works
+LibreOffice Writer: doesn't work
+
 ## Version
 
 0.0.3 - alpha
