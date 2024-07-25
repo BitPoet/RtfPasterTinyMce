@@ -11,7 +11,7 @@ Since every application constructs the clipboard contents differently, the RTF p
 or may not be able to extract everything.
 
 ### Tested
-Microsoft Word:  works
+Microsoft Word:  works  
 LibreOffice Writer: doesn't work
 
 ## Version
