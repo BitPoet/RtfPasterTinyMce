@@ -6,26 +6,14 @@ class RtfPasterTinyMce extends WireData implements Module {
 		return [
 			"title"			=>	"RTF Paster for TinyMCE",
 			"summary"		=>	"Allow pasting of RTF content from the Windows clipboard",
-			"version"		=>	"0.0.3",
+			"version"		=>	"0.0.7",
 			"autoload"	=>	"process=ProcessPageEdit"
 		];
 	}
 	
 	public function init() {
-		$this->addHookBefore('ProcessPageEdit::execute', $this, 'addScripts');
-
 	}
 	
-	public function addScripts(HookEvent $event) {
-		
-		$this->config->scripts->add($this->config->urls->{$this->className()} . 'rtf.js/WMFJS.bundle.js');
-		$this->config->scripts->add($this->config->urls->{$this->className()} . 'rtf.js/EMFJS.bundle.js');
-		$this->config->scripts->add($this->config->urls->{$this->className()} . 'rtf.js/RTFJS.bundle.js');
-
-		$this->config->scripts->add($this->config->urls->{$this->className()} . 'plugin/rtfpaster.js');
-		
-	}
-
 	public function ___install() {
 		$mod = $this->modules->get('InputfieldTinyMCE');
 		$mod->addPlugin('/site/modules/' . $this->className() . '/plugin/rtfpaster.js');

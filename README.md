@@ -1,5 +1,6 @@
 # RtfPasterTinyMce
-ProcessWire module - TinyMCE Plugin for pasting RTF converted to HTML instead of plain text
+ProcessWire module - TinyMCE plugin that replaces images in pasted HTML with those taken
+from parallel RTF content in the clipboard
 
 ## What it does
 
@@ -7,16 +8,16 @@ It allows you to copy content from office applications on Windows including imag
 Unlike regular copy and paste e.g. from MS Word, where images are contained as file:// links
 and unusable, images are pasted as data: URLs.
 
-Since every application constructs the clipboard contents differently, the RTF parser may
-or may not be able to extract everything.
+Since every application constructs the clipboard contents differently, the plugin may
+or may not be able to extract the images.
 
 ### Tested
 Microsoft Word:  works  
-LibreOffice Writer: doesn't work
+LibreOffice Writer: works
 
 ## Version
 
-0.0.3 - alpha
+0.0.7 - alpha
 
 ## Status
 
@@ -44,9 +45,11 @@ Tadaa! Your images are magically uploaded into the selected field.
 Since the RTF doesn't contain any information about the file name of the source image, your
 uploaded images will be named fieldname.png, fieldname-1.png, fieldname-2.png etc.
 
-## Credits
+## The Dirty Truth
 
-Credits go to [tbluemel](https://github.com/tbluemel) for creating the [rtf.js](https://github.com/tbluemel/rtf.js) RTF convert.
+RtfPaster looks at both the text/rtf and text/html contents in the clipboard. If it finds both,
+it extracts the image data and replaces any images in the HTML in the same order. Whether we can
+rely on the order in both being identical hasn't been verified yet.
 
 ## LICENSE
 
